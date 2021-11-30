@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import RubiksCube from "./rubikscube";
 
 export default function Index() {
   return (
@@ -407,7 +408,7 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 pb-32 pt-48">
+        <div className="text-white container mx-auto px-4 pb-32 pt-48">
           <div className="items-center flex flex-wrap">
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
@@ -432,7 +433,7 @@ export default function Index() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="text-blueGray-500">
+                        <h4 className="">
                           Built by Developers for Developers
                         </h4>
                       </div>
@@ -446,7 +447,7 @@ export default function Index() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="text-blueGray-500">
+                        <h4 className="">
                           Carefully crafted code for Components
                         </h4>
                       </div>
@@ -460,7 +461,7 @@ export default function Index() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="text-blueGray-500">
+                        <h4 className="">
                           Dynamic Javascript Components
                         </h4>
                       </div>
@@ -471,7 +472,7 @@ export default function Index() {
             </div>
 
             <div className="w-full md:w-6/12 mr-auto px-4 pt-24 md:pt-0">
-              <img
+              {/* <img
                 alt="..."
                 className="max-w-full rounded-lg shadow-xl"
                 style={{
@@ -479,7 +480,9 @@ export default function Index() {
                     "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
                 }}
                 src={require("assets/img/documentation.png").default}
-              />
+              /> */}
+              <RubiksCube></RubiksCube>
+              
             </div>
           </div>
         </div>
